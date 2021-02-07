@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.wrap {
+  max-width: 700px;
+  margin: 20px auto 40px ;
+}
+.list {
+  width: 550px;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+.list-item {
+  position: relative;
+  background: #e0dcdd;
+  border: 1px solid #cfc8c8;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#input {
+  width: 400px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #132743e6;
+  border: 1px solid #333;
+  border-radius: 6px;
+  margin-right: 10px;
+  text-indent: 20px;
+  outline: none;
+  margin-top: 20px;
+}
+#input:focus {
+  border: 2px solid #ed4c5c;
+}
+#button {
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+  background: #ed4c5c;
+  border: 2px solid  #ed4c5c;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+}
+.delete-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 16px 10px 16px;
+  background: #ed4c5c;
+  cursor: pointer;
+}
+.checked {
+  background: #82f191;
+}
