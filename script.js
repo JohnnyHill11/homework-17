@@ -6,7 +6,6 @@ const DELETE_BUTTON_CLASS = 'delete-button';
 const LIST_ITEM_CLASS = 'list-item';
 const LIST_ITEM_SELECTOR = '.' + LIST_ITEM_CLASS;
 
-
 const input = document.querySelector('#input');
 const listItemTemplate = document.querySelector('#list-item-template').innerHTML;
 const listEl = document.querySelector('#list-id');
@@ -65,7 +64,10 @@ function toggleTodo(todoId) {
 }
 
 function deleteTodo(todoId) {
-  const todo = todoList.find((todo) => todo.id === todoId);
-  todoList.splice(todo, 1);
+  const index = todoList.findIndex((index) => index.id === todoId);
+  if (index !== -1) {
+    todoList.splice(index, 1);
+  }
+  todoList.splice(index, 1);
   renderTodos(todoList);
 }
